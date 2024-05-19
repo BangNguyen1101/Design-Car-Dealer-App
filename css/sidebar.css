@@ -3,26 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #sidebar {
-    position:absolute;
+    position: fixed;
     width: 20%;
     height: 100%;
     background: #FFFFFF;
+    border-right: 0.5px solid #aaaaaa;
 }
 .sidebar_list{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 70%;
-    height: 94%;
-    gap:30%; 
+    width: 80%;
+    height: 90%;
+    gap:30% ; 
     margin: 30px 50px 30px 24px;
 }
 .sidebar_top {
+    width: 15%;
+    position: fixed;
     display: flex;
     flex-direction: column;
     gap: 35px; 
-    width: 100%;
+    flex: 1;
 }
 .sidebar_top-logo {
     display: flex;
@@ -72,14 +76,89 @@
     color: #FFFFFF;
     cursor: pointer;
 }
-/* .sidebar_top-contents .btn_item:nth-child(2) {
-    background-color:#F3F5F8;
-} */
+.sidebar_top-contents .btn_item:nth-child(1) {
+    background-color:#f3f5f8;
+}
 .sidebar_bottom { 
-    width: 100%;
-    height: 92px;
+    width: 15%;
     display: flex; 
+    position: fixed;
+    bottom: 25px;
     flex-direction: column; 
     gap: 24px; 
+}
+.btn_item img {
+    margin-left: 10px;
+}
+.right{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left:20%
+}
+#top{
+    display: flex;
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 1000;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background: #FFFFFF;
+    border-bottom: 0.5px solid #b9b9b9;
+    margin-bottom: 15px;
+}
+.top_contents{
+    display: flex;
+    align-items: center;
+    gap: 45%;
+    width: 92%;
+    height: 48px;
+    margin: 15px 44.4px;
     box-sizing: border-box;
 }
+.top_contents-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: Hug (46px)px;
+    opacity: 0px;
+    padding: 12px 14px;
+    gap: 10px;
+    width: 358px;
+    background: #F5F4F6;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.top_contents-search input{
+    gap: 8px;
+    width: 358px;
+    height: 22px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.83px;
+    text-align: left;
+    color:#7C7C8D;
+    border: none;
+    outline:none;
+    background-color:#F5F4F6 ;
+    margin-left: 16px;
+    caret-color:#EF9011;
+}
+.top_contents-right{
+    display: flex;
+    position: fixed;
+    right: 25px;
+    gap: 35px;
+}
+
+
+
+
+
+
+
+
+
