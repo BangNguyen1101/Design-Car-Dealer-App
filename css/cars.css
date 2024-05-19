@@ -10,7 +10,6 @@ ul{
     margin: 0;
 }
 iframe{
-    z-index: 1;
     border: 0;
     position: fixed;
     width: 100%;
@@ -20,7 +19,7 @@ iframe{
     position: relative;
     width: 80%;
     height: 100%;
-    left:19%;
+    left:248px;
 }
 .right_conten{
     width: 100%;

@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 #sidebar {
     position: fixed;
     width: 20%;
@@ -75,9 +74,6 @@
     background-color:#F3F5F8;
     color: #FFFFFF;
     cursor: pointer;
-}
-.sidebar_top-contents .btn_item:nth-child(1) {
-    background-color:#f3f5f8;
 }
 .sidebar_bottom { 
     width: 15%;
