@@ -1,5 +1,3 @@
-alert("Page da load xong");
-
 const input = document.getElementById("input");
 const eyeOpen = document.querySelector(".eye-open");
 const eyeClose = document.querySelector(".eye-close");
