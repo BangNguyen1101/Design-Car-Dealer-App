@@ -56,6 +56,6 @@
 .top_contents-right{
     display: flex;
     position: fixed;
-    right: 25px;
+    left: 72%;
     gap: 35px;
 }

@@ -86,13 +86,13 @@
 .btn_item img {
     margin-left: 10px;
 }
-.right{
+/* .right{
     position: absolute;
     width: 80%;
     height: 100%;
     left:20%
-}
-#top{
+} */
+/* #top{
     display: flex;
     position: fixed;
     transition: top 0.3s;
@@ -148,7 +148,7 @@
     position: fixed;
     right: 25px;
     gap: 35px;
-}
+} */
 
 
 
