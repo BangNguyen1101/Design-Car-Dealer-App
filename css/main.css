@@ -153,6 +153,25 @@
     right: 25px;
     gap: 35px;
 }
+.brand {
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo-xe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 266px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+    box-shadow: 1px 1px 3px #5F6165;
+    border-radius: 14px;
+    background-color: #fff;
+}
 
 
 
