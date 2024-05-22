@@ -154,11 +154,13 @@
     gap: 35px;
 }
 .brand {
-    width: 100%;
+    width: 95%;
     display: flex;
     margin-top: 80px;
     justify-content: space-between;
     padding: 20px;
+    left: 25px;
+    position: absolute  ;
 }
 .logo-xe{
     display: flex;
@@ -171,6 +173,13 @@
     box-shadow: 1px 1px 3px #5F6165;
     border-radius: 14px;
     background-color: #fff;
+}
+.cars {
+    display:flex;
+    position: relative;
+    width: 100%;
+    left: 45px ;
+    top: 400px; 
 }
 
 
