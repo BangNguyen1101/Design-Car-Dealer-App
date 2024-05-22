@@ -9,60 +9,31 @@ body{
 p h2{
     margin: 0;
 }
-a button{
-    /* pointer-events: auto; */
-    z-index: 2;
+.sidebar{
+    height:100%;
+    z-index: 1;
 }
 iframe{
     width: 100%;
-    height: 100%;
-    /* z-index: 1; */
     position: fixed;
     border: 0;
-    /* pointer-events: none; */
 }
 .right{
-    position: relative;
+    position: absolute;
     width: 80%;
     height: 100%;
-    left:19%; 
+    left:20%; 
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-
-}
-/* .sidebar_top-contents .btn_item:nth-child(2) {
-    background-color: #FFFFFF;
-}
-.sidebar_top-contents .btn_item:nth-child(2):hover {
-    background-color: #F3F5F8;
-    color: #FFFFFF;
-}
-.sidebar_top-contents .btn_item:last-child {
-    background-color:#F3F5F8;
-} */
-.right_content{
-    width: 100%;
-    height: 93%;
-    position:absolute;
-    top: 78px;
-}
-.right_content {
-    pointer-events: none;
-}
-
-.right_content a {
-    pointer-events: auto;
 }
 .content_box1{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
-    width: 53%;
     height: 253.04px;
-    left: 5%;
-    top: 30px;
+    margin-left: 39px;
+    top: 108px;
 }
 .service-name{
     font-size: 24px;
@@ -79,11 +50,9 @@ iframe{
 }
 .box1_button-container{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
     width: 100%;
     height: 70px;
+    justify-content: space-between
 }
 .box1_button-container button{
     display: flex;
@@ -92,10 +61,8 @@ iframe{
     align-items: center;
     padding: 20px 13px;
     gap: 10px;
-
     width: 7.23%;
     height: 70px;
-
     background: #FFFFFF;
     border-radius: 4px;
     border: none;
@@ -117,14 +84,11 @@ iframe{
 
 .item_list{
     display: flex;
-    flex-direction: row;
+    width:100%;
+    justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    position: absolute;
-    width: 66%;
-    height: 15.04px;
-    top: 238px;
-    left: 17.5%;
+    margin-top: 27px;
 }
 .item{
     display: flex;
@@ -147,11 +111,9 @@ iframe{
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
-    position: absolute;
-    width: 53%;
     height: 347px;
-    left: 5%;
-    top: 319px;
+    margin-top: 35.96px;
+    margin-left: 39px;
 }
 .main_content{
     display: flex;
@@ -169,10 +131,8 @@ iframe{
     text-align: center;
     justify-content: center;
     gap: 24px;
-
     width: 36%;
     height: 268px;
-
     background: #FFFFFF;
     border-radius: 10px;
 }
@@ -192,7 +152,6 @@ iframe{
     gap: 12px;
     width: 60%;
     height: 268px;
-    
 }
 .service_list{
     display: flex;
@@ -278,9 +237,8 @@ iframe{
 
 /* box3 */
 .content_box3{
-    position: absolute;
-    width: 37%;
-    left: 911px;
+    margin-left: 30px;
+    width: 87%;
     height: 372px;
     top: 30px;
 }
@@ -303,7 +261,6 @@ iframe{
     width: 48px;
     height: 268px;
     margin: 24px 0px 24px 24px;
-
 }
 .rectangle{
     width: 3px;
@@ -349,9 +306,6 @@ iframe{
     height: 21px;
     margin-top: 13px;
 }
-.required .price p{
-    margin: 0;
-}
 .price p:nth-child(1){
     font-size: 16px;
     color: #242731;
@@ -374,11 +328,9 @@ iframe{
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    position: absolute;
-    width: 267px;
     height: 227px;
-    left: 911px;
-    top: 511px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .select_list{
@@ -416,9 +368,7 @@ input{
 }
 #radio_text1{
     width: 29.15px;
-    height: 24px;
-    border-color: #ff0000; /* Màu đỏ */
-    background-color: #ffffff;
+    height: 24px; 
 }
 #radio_text2{
     width: 24px;
@@ -444,31 +394,28 @@ input{
 }
 /* box5 */
 .content_box5{
-    position: absolute;
-    width: 1031px;
+    width: 92%;
     height: 210px;
-    left: 291px;
     top: 774px;
-
     background: #FFFFFF;
     border-radius: 14px;
+    margin: 32px 48px;
 }
 .box5-frame_list{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 60px;
-
-    width: 935px;
+    gap: 9%;
+    width: 91%;
     height: 146px;
-    margin: 32px 48px;
+    padding: 32px 48px;
 }
 .box5-frame_list .frame_list-box{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 185px;
+    width: 20%;
     height: 146px;
 }
 .box5-frame_list .frame_list-box .frame-title{
@@ -498,4 +445,18 @@ input{
     width: 1px;
     height: 17px;
     background: #ECECEC;
+}
+
+.content{
+    margin-top: 7rem;
+}
+
+.right-top{
+    position: relative;
+    z-index: 1;
+}
+
+.content-wrap{
+    display:flex;
+    justify-content: space-around;
 }
