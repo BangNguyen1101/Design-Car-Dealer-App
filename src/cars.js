@@ -1,27 +1,41 @@
-const carouselRow = document.querySelector('.frame_box3');
-const carouselSlides = document.getElementsByClassName('frame_box3-cars');
-const dots = document.getElementsByClassName('dot');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+document.addEventListener('DOMContentLoaded', () => {
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    document.querySelector('.prev').addEventListener('click', () => {
+        plusSlides(-1);
+    });
 
-let index = 0; // Đặt index ban đầu là 0
-width=carouselSlides[0].clientWidth;
-carouselRow.style.transform = 'translateX(' + (-width * index) + 'px)';
+    document.querySelector('.next').addEventListener('click', () => {
+        plusSlides(1);
+    });
 
-nextBtn.addEventListener('click', nextSlide);
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide(index + 1);
+        });
+    });
 
-function nextSlide() {
-    if (index >= carouselSlides.length - 1) { return; }
-    index++;
-    carouselRow.style.transition = 'transform 0.4s ease-out';
-    carouselRow.style.transform = 'translateX(' + (-width * index) + 'px)';
-}
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
-prevBtn.addEventListener('click', prevSlide);
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
 
-function prevSlide() {
-    if (index <= 0) { return; }
-    index--;
-    carouselRow.style.transition = 'transform 0.4s ease-out';
-    carouselRow.style.transform = 'translateX(' + (-width * index) + 'px)';
-}
+    function showSlides(n) {
+        let i;
+        let slides = document.querySelectorAll('.frame_box3-cars');
+        let dots = document.querySelectorAll('.dot');
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "flex";
+        dots[slideIndex-1].className += " active";
+    }
+});

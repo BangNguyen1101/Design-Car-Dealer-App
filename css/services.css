@@ -80,10 +80,9 @@ p h2{
     font-size: 14px;
     border-radius: 5px;
 }
-.btn_item:hover{
+.active,.btn_item:hover{
     background-color:#F3F5F8;
     color: #FFFFFF;
-    cursor: pointer;
 }
 .sidebar_bottom { 
     width: 15%;

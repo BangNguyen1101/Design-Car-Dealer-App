@@ -15,6 +15,7 @@ ul {
     height: 100%;
     background: #FFFFFF;
     border-right: 0.5px solid #aaaaaa;
+    
 }
 .sidebar_list{
     display: flex;
@@ -76,10 +77,9 @@ ul {
     font-size: 14px;
     border-radius: 5px;
 }
-.btn_item:hover{
+.active, .btn_item:hover{
     background-color:#F3F5F8;
     color: #FFFFFF;
-    cursor: pointer;
 }
 .sidebar_bottom { 
     width: 15%;
@@ -92,6 +92,7 @@ ul {
 .btn_item img {
     margin-left: 10px;
 }
+
 .right {
     position: absolute;
     width: 80%;
@@ -123,8 +124,6 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: Hug (46px)px;
-    opacity: 0px;
     padding: 12px 14px;
     gap: 10px;
     width: 358px;
@@ -366,7 +365,7 @@ ul {
 .frame_box3-cars {
     width: 100%;
     height: 385px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 30px;
 }
@@ -393,8 +392,11 @@ ul {
     gap: 10px;
     margin-top: 10px;
 }
-.arrow img {
+.arrow img , .arrow .dot{
     cursor: pointer;
+}
+.arrow img{
+    
 }
 .dot{
     height: 15px;
@@ -405,8 +407,7 @@ ul {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.active{
+.arrow .active{
     background-color: #333;
 }
-
 
