@@ -9,16 +9,11 @@ body{
 p h2{
     margin: 0;
 }
-.sidebar{
-    height:100%;
-    z-index: 1;
-}
 #sidebar {
     position: fixed;
     width: 20%;
     height: 100%;
-    background: #FFFFFF;
-    border-right: 0.5px solid #aaaaaa;
+    background: var( --foundation-light-white);
 }
 .sidebar_list{
     display: flex;
@@ -43,7 +38,7 @@ p h2{
     gap: 12px;
 }
 .caradver {
-    font-family: "DM Sans";
+    font-family: var(--tittle-16-m);
     font-size: 24px;
     font-weight: 700;
     line-height: 31.25px;
@@ -67,11 +62,11 @@ p h2{
     height: 34px;
     gap: 10px;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    background-color: var(--foundation-light-white);
     text-decoration: none;
 }
 .btn {
-    font-family:"DM Sans";
+    font-family:var( --tittle-16-m);
     gap: 10px;
     color: #5F6165;
     display: flex;
@@ -82,7 +77,7 @@ p h2{
 }
 .active,.btn_item:hover{
     background-color:#F3F5F8;
-    color: #FFFFFF;
+    color: var( --foundation-light-white);
 }
 .sidebar_bottom { 
     width: 15%;
@@ -95,10 +90,7 @@ p h2{
 .btn_item img {
     margin-left: 10px;
 }
-/* .right-top{
-    position: relative;
-  
-} */
+
 .right {
     position: absolute;
     width: 80%;
@@ -113,8 +105,7 @@ p h2{
     align-items: center;
     width: 100%;
     height: 65px;
-    background: #FFFFFF;
-    border-bottom: 0.5px solid #b9b9b9;
+    background: var( --foundation-light-white);
     margin-bottom: 15px;
 }
 .top_contents{
@@ -130,12 +121,12 @@ p h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: Hug (46px)px;
+    height: 46px;
     opacity: 0px;
     padding: 12px 14px;
     gap: 10px;
     width: 358px;
-    background: #F5F4F6;
+    background: var(--color-whitesmoke-300);
     border-radius: 8px;
     box-sizing: border-box;
 }
@@ -144,7 +135,7 @@ p h2{
     gap: 8px;
     width: 358px;
     height: 22px;
-    font-family: DM Sans;
+    font-family: var(--tittle-16-m);
     font-size: 16px;
     font-weight: 500;
     line-height: 20.83px;
@@ -152,7 +143,7 @@ p h2{
     color:#7C7C8D;
     border: none;
     outline:none;
-    background-color:#F5F4F6 ;
+    background-color:var(--color-whitesmoke-300) ;
     margin-left: 16px;
     caret-color:#EF9011;
 }
@@ -167,22 +158,33 @@ p h2{
     width: 80%;
     height: 100%;
     left:20%; 
-    font-family: 'DM Sans';
+    font-family: var( --tittle-16-m);
     font-style: normal;
     font-weight: 700;
 }
+.content{
+    margin-top: 7rem;
+}
+
+.content-wrap{
+    display:flex;
+    justify-content: space-around;
+}
+
 .content_box1{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     height: 253.04px;
-    margin-left: 39px;
+    margin-left: var(--margin-left);
     top: 108px;
+    box-sizing: border-box;
 }
+
 .service-name{
     font-size: 24px;
     line-height: 31px;
-    color: #242731;
+    color: var(--primary-dark);
     margin-bottom: 24px ;
     margin-top: 0px;
 }
@@ -196,7 +198,7 @@ p h2{
     display: flex;
     width: 100%;
     height: 70px;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .box1_button-container button{
     display: flex;
@@ -207,10 +209,10 @@ p h2{
     gap: 10px;
     width: 7.23%;
     height: 70px;
-    background: #FFFFFF;
+    background: var( --foundation-light-white);
     border-radius: 4px;
     border: none;
-    font-family: 'DM Sans';
+    font-family: var( --tittle-16-m);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -219,11 +221,11 @@ p h2{
 }
 .box1_button-container .button-red {
     background-color: #FF6370;
-    color: #FFFFFF;
+    color: var( --foundation-light-white);
 }
 .box1_button-container .button-purple {
     background-color:#A162F7 ;
-        color: #FFFFFF ;
+        color: var( --foundation-light-white) ;
 }
 
 .item_list{
@@ -257,7 +259,7 @@ p h2{
     gap: 20px;
     height: 347px;
     margin-top: 35.96px;
-    margin-left: 39px;
+    margin-left: var(--margin-left);
 }
 .main_content{
     display: flex;
@@ -277,13 +279,13 @@ p h2{
     gap: 24px;
     width: 36%;
     height: 268px;
-    background: #FFFFFF;
+    background: var( --foundation-light-white);
     border-radius: 10px;
 }
 .main_content-left h2{
     font-size: 24px;
     line-height: 31px;
-    color: #242731;
+    color: var(--primary-dark);
 }
 .main_content-left img{
     width: 68%;
@@ -304,7 +306,7 @@ p h2{
     gap: 7%;
     width: 100%;
     height: 60px;
-    background: #FFFFFF;
+    background: var( --foundation-light-white);
     border-radius: 8px;
 }
 .service{
@@ -350,7 +352,7 @@ p h2{
 
     background: #A162F7;
     border-radius: 8px;
-    color: #FFFFFF;
+    color: var( --foundation-light-white);
     text-decoration: none;
 }
 #add:hover{
@@ -370,7 +372,7 @@ p h2{
     border-radius: 10px;
     font-size: 24px;
     line-height: 31px;
-    color: #FFFFFF;
+    color: var( --foundation-light-white);
     text-decoration: none;
 }
 #pay:hover{
@@ -392,7 +394,7 @@ p h2{
     align-items: flex-start;
     gap: 10px;
     height: 318px;
-    background: #FFFFFF;
+    background: var( --foundation-light-white);
     border-radius: 14px;
 }
 .card_list .card-left{
@@ -452,7 +454,7 @@ p h2{
 }
 .price p:nth-child(1){
     font-size: 16px;
-    color: #242731;
+    color: var(--primary-dark);
 }
 .price div{
     width: 1px;
@@ -505,7 +507,7 @@ p h2{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: #242731;
+    color: var(--primary-dark);
 }
 input{
     margin: 0;
@@ -541,9 +543,9 @@ input{
     width: 92%;
     height: 210px;
     top: 774px;
-    background: #FFFFFF;
+    background: var( --foundation-light-white);
     border-radius: 14px;
-    margin: 32px 48px;
+    margin: 32px var(--margin-left);
 }
 .box5-frame_list{
     display: flex;
@@ -565,7 +567,7 @@ input{
 .box5-frame_list .frame_list-box .frame-title{
     font-size: 20px;
     line-height: 26px;
-    color: #000000;
+    color: var(--color-black);
     margin-top: 20px;
 }
 .box5-frame_list .frame_list-box .frame-text{
@@ -589,18 +591,4 @@ input{
     width: 1px;
     height: 17px;
     background: #ECECEC;
-}
-
-.content{
-    margin-top: 7rem;
-}
-
-.right-top{
-    position: relative;
-    z-index: 1;
-}
-
-.content-wrap{
-    display:flex;
-    justify-content: space-around;
 }

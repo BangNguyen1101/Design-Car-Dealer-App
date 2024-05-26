@@ -13,9 +13,7 @@ ul {
     position: fixed;
     width: 20%;
     height: 100%;
-    background: #FFFFFF;
-    border-right: 0.5px solid #aaaaaa;
-    
+    background: var(--foundation-light-white);
 }
 .sidebar_list{
     display: flex;
@@ -40,14 +38,13 @@ ul {
     gap: 12px;
 }
 .caradver {
-    font-family: "DM Sans";
+    font-family: var(--tittle-16-m);
     font-size: 24px;
     font-weight: 700;
     line-height: 31.25px;
     text-align: left;
     color: #1F2128;
 }
-
 .sidebar_top-contents {
     display: flex;
     flex-direction: column;
@@ -64,11 +61,11 @@ ul {
     height: 34px;
     gap: 10px;
     border-radius: 6px;
-    background-color: #FFFFFF;
+    background-color: var(--foundation-light-white);
     text-decoration: none;
 }
 .btn {
-    font-family:"DM Sans";
+    font-family:var(--tittle-16-m);
     gap: 10px;
     color: #5F6165;
     display: flex;
@@ -79,7 +76,7 @@ ul {
 }
 .active, .btn_item:hover{
     background-color:#F3F5F8;
-    color: #FFFFFF;
+    color:var(--foundation-light-white);
 }
 .sidebar_bottom { 
     width: 15%;
@@ -92,7 +89,6 @@ ul {
 .btn_item img {
     margin-left: 10px;
 }
-
 .right {
     position: absolute;
     width: 80%;
@@ -107,8 +103,8 @@ ul {
     align-items: center;
     width: 100%;
     height: 65px;
-    background: #FFFFFF;
-    border-bottom: 0.5px solid #b9b9b9;
+    background: var(--foundation-light-white);
+
     margin-bottom: 15px;
 }
 .top_contents{
@@ -127,7 +123,7 @@ ul {
     padding: 12px 14px;
     gap: 10px;
     width: 358px;
-    background: #F5F4F6;
+    background: var(--color-whitesmoke-300);
     border-radius: 8px;
     box-sizing: border-box;
 }
@@ -136,7 +132,7 @@ ul {
     gap: 8px;
     width: 358px;
     height: 22px;
-    font-family: DM Sans;
+    font-family: var(--tittle-16-m);
     font-size: 16px;
     font-weight: 500;
     line-height: 20.83px;
@@ -144,7 +140,7 @@ ul {
     color:#7C7C8D;
     border: none;
     outline:none;
-    background-color:#F5F4F6 ;
+    background-color:var(--color-whitesmoke-300);
     margin-left: 16px;
     caret-color:#EF9011;
 }
@@ -160,15 +156,15 @@ ul {
     flex-direction: row;
     width: 94%;
     height: 38px;
-    margin: 120px 0 0 5%;
+    margin: 120px 0 0 var(--margin-left);
 }
 #text_name-car {
-    font-family: Arial;
+    font-family: var(--font-sf);
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    color: #000000;
+    color: var(--color-black);
 }
 .frame_div {
     display: flex;
@@ -179,12 +175,12 @@ ul {
     margin-left: auto;
 }
 .money {
-    font-family: Arial;
+    font-family: var(--font-sf);
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: #000000;
+    color: var(--color-black);
 }
 .right_main {
     display: flex;
@@ -192,7 +188,7 @@ ul {
     gap: 2%;
     width: 94%;
     height: 413px;
-    margin: 35px 0 0 5%;
+    margin: 35px 0 0 var(--margin-left);
 }
 .img_car {
     width: 52%;
@@ -214,7 +210,7 @@ ul {
     flex-direction: column;
     width: 100%;
     height: 245px;
-    font-family: Arial;
+    font-family: var(--font-sf);
     border: 2px solid #D5D5D5;
     border-radius: 14px;
 }
@@ -265,7 +261,7 @@ ul {
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: var(--color-black);
     font-weight: 500;
 }
 .frame_box1 a {
@@ -298,7 +294,7 @@ ul {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color:var(--color-black);
 }
 .frame_box1 .frame_wrapper2 .contact {
     display: flex;
@@ -315,16 +311,10 @@ ul {
 }
 .frame_wrapper2 a {
     width: 112px;
-    height: 14px;
     margin: 64px 0 0 70%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #757474;
 }
 .frame_box1 a:hover {
-    color: #000000;
+    color: var(--color-black);
 }
 .frame_box2 {
     width: 100%;
@@ -347,17 +337,17 @@ ul {
 .frame_box2-item h3 {
     width: auto;
     height: 19px;
-    font-family: 'Arial';
+    font-family: var(--font-sf);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
+    color:var(--color-black);
 }
 
 .frame_box3 {
     width: 93%;
-    margin: 30px 0 0 5%;
+    margin: 30px 0 0 var(--margin-left);
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -394,9 +384,6 @@ ul {
 }
 .arrow img , .arrow .dot{
     cursor: pointer;
-}
-.arrow img{
-    
 }
 .dot{
     height: 15px;

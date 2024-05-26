@@ -1,3 +1,17 @@
-:roof{
-    
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  :root {
+    --body02: Inter;
+    --heading02: "Encode Sans";
+    --font-sf: Arial;
+    --tittle-16-m: "DM Sans";
+    --foundation-light-white: #fff;
+    --color-black: #000;
+    --color-whitesmoke-300: #f5f4f6;
+    --gray-dark:#72767C;
+    --primary-dark: #242731;
+    --margin-left: 5%;
 }
+  
