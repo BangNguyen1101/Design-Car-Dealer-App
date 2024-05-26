@@ -2,17 +2,16 @@ body {
     margin: 0;
     line-height: none;
 }
-
+#active{
+    background-color:#F3F5F8;
+    color: #FFFFFF;
+}
 .sell_car {
-    
     width: 100%;
     height: 1080px;
-
     background: #F5F4F6;
 }
-
  .text_sellcars1 {
-  
     position: absolute;
     width: 126px;
     height: 39px;
@@ -405,8 +404,4 @@ option{
     border-radius: 22px;
     padding-left: 10px;
 
-}
-.sidebar_top-contents .active, .btn_item:hover{
-    background-color:#F3F5F8;
-    color: #FFFFFF;
 }

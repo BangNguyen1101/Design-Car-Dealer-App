@@ -6,6 +6,10 @@
     background: #F5F5F5;
 
 }
+#active{
+    background-color:#F3F5F8;
+    color: #FFFFFF;
+}
 .list-car {
     position: absolute;
     display: flex;
@@ -38,7 +42,7 @@
     border-radius: 6%;
     width: 343px;
     height: 236px;
-   
+    box-shadow: 1px 1px 3px #5F6165;
 
 }
 .car-item  a, .car-item {
@@ -167,8 +171,4 @@
 }
 .pt9 {
     margin-top: 25px;
-}
-.sidebar_top-contents .active, .btn_item:hover{
-    background-color:#F3F5F8;
-    color: #FFFFFF;
 }
