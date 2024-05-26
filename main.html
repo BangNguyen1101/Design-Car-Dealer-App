@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Trang chủ</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Encode Sans:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@500;700&display=swap"
+    />
 </head>
 <body style="background-color: #f5f5f5;">
     <div class="assets">
@@ -18,7 +30,7 @@
                     </div>
                     <!--  -->
                     <nav class="sidebar_top-contents">
-                        <a class="btn_item">
+                        <a class="btn_item" id="active">
                             <img alt=" " src="assets/img/dashboardicon(1).png">
                             <div class="btn">Dashboard</div><br>
                         </a>
@@ -26,11 +38,11 @@
                             <img alt=" " src="assets/img/Shape.png">
                             <div class="btn">Assets</div><br>
                         </a>
-                        <a class="btn_item">
+                        <a class="btn_item" href="booking.html">
                             <img alt=" " src="assets/img/Line_car.png">
                             <div class="btn">Booking</div><br>
                         </a>
-                        <a class="btn_item" >
+                        <a class="btn_item" href="sellcars.html">
                             <img alt=" " src="assets/img/bag.png">
                             <div class="btn">Sell Cars</div><br>
                         </a>
@@ -80,20 +92,157 @@
                         <img src="assets/img/Mercedes Benz.png" alt="">
                 </div>
             </div>
-            <div class="cars">
-                <div class="car-img">
-                    <img src="assets/img/Frame 279.png" alt="">
-                </div> <div class="car-img">
-                    <img src="assets/img/Frame 279.png" alt="">
-                </div>  <div class="car-img">
-                    <img src="assets/img/Frame 279.png" alt="">
-                </div>  <div class="car-img">
-                    <img src="assets/img/Frame 279.png" alt="">
-                </div>  <div class="car-img">
-                    <img src="assets/img/Frame 279.png" alt="">
-                </div>  <div class="car-img">
-                    <img src="assets/img/Frame 279.png" alt="">
-                </div>  
+            <div class="car_item-box1">
+                <div class="car-item">
+                    <a href="BMW.html">
+                        <div class="recommend">
+                            <img src="./assets/img/spin.png" alt="">
+                            <b>64% Recommend</b>
+                        </div>
+                        <div class="car-picture">
+                            <img class="pt1" src="./assets/img/image 12.png" alt="">
+                        </div>
+                        <div class="text-1">BMW X1</div>
+                        <div class="bottom-car">
+                            <div class="icon1">
+                                <img src="./assets/img/icon (1).png" alt="">
+                            </div>
+                            <p class="text-2">132K</p>
+                            <div class="icon2">
+                                <img src="./assets/img/icon (2).png" alt="">
+                            </div>
+                            <div class="icon3">
+                                <img src="./assets/img/icon (3).png" alt="">
+                            </div>
+                            <p class="text-3">$32/h</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="car-item">
+                    <a href="lamborghini.html">
+                        <div class="recommend">
+                            <img src="./assets/img/spin.png" alt="">
+                            <b>94% Recommend</b>
+                        </div>
+                        <div class="car-picture">
+                            <img class="pt2" src="./assets/img/image 13.png" alt="">
+                        </div>
+                        <div class="text-1">Lamborghini Urus</div>
+                        <div class="bottom-car">
+                            <div class="icon1">
+                                <img src="./assets/img/icon (1).png" alt="">
+                            </div>
+                            <p class="text-2">232K</p>
+                            <div class="icon2">
+                                <img src="./assets/img/icon (2).png" alt="">
+                            </div>
+                            <div class="icon3">
+                                <img src="./assets/img/icon (3).png" alt="">
+                            </div>
+                            <p class="text-3">$42/h</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="car-item">
+                    <a href="volvo.html">
+                        <div class="recommend">
+                            <img src="./assets/img/spin.png" alt="">
+                            <b>89% Recommend</b>
+                        </div>
+                        <div class="car-picture">
+                            <img class="pt3" src="./assets/img/image 14.png" alt="">
+                        </div>
+                        <div class="text-1">Volvo XC90</div>
+                        <div class="bottom-car">
+                            <div class="icon1">
+                                <img src="./assets/img/icon (1).png" alt="">
+                            </div>
+                            <p class="text-2">532K</p>
+                            <div class="icon2">
+                                <img src="./assets/img/icon (2).png" alt="">
+                            </div>
+                            <div class="icon3">
+                                <img src="./assets/img/icon (3).png" alt="">
+                            </div>
+                            <p class="text-3">$55/h</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="car_item-box">
+                <div class="car-item">
+                    <div class="recommend">
+                        <img src="./assets/img/spin.png" alt="">
+                        <b>56% Recommend</b>
+                    </div>
+                    <div class="car-picture">
+                        <img class="pt4" src="./assets/img/image 15.png" alt="">
+                    </div>
+                    <div class="text-1">Jeep Rubicon</div>
+                    <div class="bottom-car">
+                        <div class="icon1">
+                            <img src="./assets/img/icon (1).png" alt="">
+                        </div>
+                        <p class="text-2">350K</p>
+                        <div class="icon2">
+                            <img src="./assets/img/icon (2).png" alt="">
+                        </div>
+                        <div class="icon3">
+                            <img src="./assets/img/icon (3).png" alt="">
+                        </div>
+                        <p class="text-3">$29/h</p>
+                    </div>
+                </div>
+
+                <div class="car-item">
+                    <div class="recommend">
+                        <img src="./assets/img/spin.png" alt="">
+                        <b>69% Recommend</b>
+                    </div>
+                    <div class="car-picture">
+                        <img class="pt5" src="./assets/img/image 16.png" alt="">
+                    </div>
+                    <div class="text-1">Mercedes-Benz AMG G 63</div>
+                    <div class="bottom-car">
+                        <div class="icon1">
+                            <img src="./assets/img/icon (1).png" alt="">
+                        </div>
+                        <p class="text-2">769K</p>
+                        <div class="icon2">
+                            <img src="./assets/img/icon (2).png" alt="">
+                        </div>
+                        <div class="icon3">
+                            <img src="./assets/img/icon (3).png" alt="">
+                        </div>
+                        <p class="text-3">$26/h</p>
+                    </div>
+                </div>
+
+                <div class="car-item">
+                    <div class="recommend">
+                        <img src="./assets/img/spin.png" alt="">
+                        <b>75% Recommend</b>
+                    </div>
+                    <div class="car-picture">
+                        <img class="pt6" src="./assets/img/image 19.png" alt="">
+                    </div>
+                    <div class="text-1">Porsche 911 GT3 RS</div>
+                    <div class="bottom-car">
+                        <div class="icon1">
+                            <img src="./assets/img/icon (1).png" alt="">
+                        </div>
+                        <p class="text-2">852K</p>
+                        <div class="icon2">
+                            <img src="./assets/img/icon (2).png" alt="">
+                        </div>
+                        <div class="icon3">
+                            <img src="./assets/img/icon (3).png" alt="">
+                        </div>
+                        <p class="text-3">$15/h</p>
+                    </div>
+                </div>
             </div>
         </div>
             

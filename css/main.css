@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* --------- Khối bên trái --------- */
 #sidebar {
     position: fixed;
     width: 20%;
@@ -41,7 +41,10 @@
     text-align: left;
     color: #1F2128;
 }
-
+#active {
+    background-color:#F3F5F8;
+    color: #FFFFFF;
+}
 .sidebar_top-contents {
     display: flex;
     flex-direction: column;
@@ -88,12 +91,15 @@
 .btn_item img {
     margin-left: 10px;
 }
+/* ---------------------------------- Khối bên phải ------------------------------- */
+
 .right{
     position: absolute;
     width: 80%;
-    height: 100%;
+    height: 955px;
     left:20%
 }
+/* ---------- Thanh tìm kiếm và user ---------- */
 #top{
     display: flex;
     position: fixed;
@@ -151,8 +157,10 @@
     right: 25px;
     gap: 35px;
 }
+/* ---------- Các thương hiệu ---------- */
+
 .brand {
-    width: 95%;
+    width: 97%;
     display: flex;
     margin-top: 80px;
     justify-content: space-between;
@@ -165,19 +173,147 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 232px;
-    height: 266px;
+    width: 223px;
+    height: 251px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
     box-shadow: 1px 1px 3px #5F6165;
     border-radius: 14px;
     background-color: #fff;
 }
-.cars {
-    display:flex;
-    position: relative;
-    width: 100%;
-    left: 45px ;
-    top: 400px; 
+/* ---------- Các loại xe ---------- */
+
+.car_item-box1{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    margin-top: 410px;
+    margin-left: 45px;
+
+}
+.car_item-box{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    margin-top: 30px;
+    margin-left: 45px;
+}
+.car-item {
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 6%;
+    width: 310px;
+    height: 236px;
+    box-shadow: 1px 1px 3px #5F6165;
+}
+.car-item  a {
+    text-decoration: none;
+    color: #242731;
+    font-family: 'DM Sans';
+}
+.recommend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 27px;
+    width: 172px;
+    height: 24px;
+}
+.car-picture {
+    width: 275px;
+    height: 123px;
+    margin-left: 15px;
+}
+.text-1 {
+    position: absolute;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    margin-left: 27px;
+    color: #000000;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+.bottom-car {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    height: 100px;
+
+}
+.icon1 {
+    width: 20px;
+    height: 20px;
+    margin-left: 27px;
+}
+.text-2 {
+    width: 30px;
+    height: 18px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #72767C;
+
+    margin-left: 16px;
+}
+.icon2 {
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    }
+.icon3 {
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+}
+.text-3 {
+    width: 39px;
+    height: 18px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #72767C;
+    margin-left: 95px;
+}
+.pt1 {
+    margin-top: -7px;
+}
+.pt2 {
+    margin-top: 21px;
+}
+.pt3 {
+    margin-top: 18px;
+}
+.pt4, .pt5 {
+    margin-top: 9px;
+}
+.pt6, .pt9 {
+    margin-top: 25px;
+}
+.pt7 {
+    margin-top: 20px;
+}
+.pt8 {
+    margin-top: 30px;
 }
 
 
