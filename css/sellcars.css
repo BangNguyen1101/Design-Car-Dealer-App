@@ -406,4 +406,7 @@ option{
     padding-left: 10px;
 
 }
-
+.sidebar_top-contents .active, .btn_item:hover{
+    background-color:#F3F5F8;
+    color: #FFFFFF;
+}
