@@ -193,6 +193,7 @@ p h2{
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    width: 100%;
 }
 .box1_button-container{
     display: flex;
