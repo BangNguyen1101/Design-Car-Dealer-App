@@ -51,3 +51,27 @@ document.querySelector(".input").addEventListener("input", function() {
         passwordError.style.display = "none";
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("username").addEventListener("input", checkInputValidity);
+    document.getElementById("password").addEventListener("input", checkInputValidity);
+
+    function checkInputValidity() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var signInButton = document.querySelector(".btn-sign-in-bot");
+
+        if (username.trim() !== "" && password.trim() !== "") {
+            signInButton.removeAttribute("disabled");
+        } else {
+            signInButton.setAttribute("disabled", "true");
+        }
+    }
+    document.querySelector('.btn-sign-in-bot').addEventListener('click', function() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username.trim() !== "" && password.trim() !== "") {
+            window.location.href = 'main.html';
+        }
+    });
+});

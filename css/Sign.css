@@ -110,7 +110,8 @@ form input {
   display: inline-flex;
   align-items: center; 
   width: 530px;
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .remember-password input[type="checkbox"] {
@@ -133,15 +134,20 @@ form input {
 }
 .btn-sign-in-bot {
   display: inline-flex;
-  text-decoration: none;
   width: 530px;
   height: 50px;
   border-radius: 5px;
   background-color: #A162F7;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
   color: #FFF;
+}
+.btn-sign-in-bot:hover{
+  background-color: #00e6ee;
+  color: #000;
 }
 .eye {
   position: absolute;
