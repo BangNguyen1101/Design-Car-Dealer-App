@@ -1,4 +1,4 @@
-const input = document.getElementById("input");
+const input = document.querySelector(".input");
 const eyeOpen = document.querySelector(".eye-open");
 const eyeClose = document.querySelector(".eye-close");
 
