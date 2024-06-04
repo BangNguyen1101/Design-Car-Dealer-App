@@ -239,7 +239,7 @@ p{
     align-items: flex-start;
     padding: 0px;
     gap: 2px;
-
+    width: 150px;
     height: 69px;
 }
 .offers .text_offer .killan{
